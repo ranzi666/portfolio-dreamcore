@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>梦游者 / DREAMWALKER — 作品集</title>
+  <meta name="description" content="粉黑灰调的梦核风格个人作品集" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&family=Noto+Serif+SC:wght@600;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 入场：醒来 -->
+  <div class="intro" id="intro">
+    <div class="intro-inner">
+      <p class="intro-label">DREAM SEQUENCE / 001</p>
+      <div class="intro-bar"><span></span></div>
+      <p class="intro-text">waking up<span class="dots"></span></p>
+    </div>
+  </div>
+
+  <!-- 氛围层 -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- 漂浮光团 -->
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+  <div class="orb orb-3" aria-hidden="true"></div>
+
+  <!-- 导航 -->
+  <header class="nav">
+    <a href="#top" class="nav-logo"><span class="moon">☾</span> dream.exe</a>
+    <nav class="nav-links">
+      <a href="#about">/ 关于</a>
+      <a href="#works">/ 作品</a>
+      <a href="#notes">/ 手记</a>
+      <a href="#contact">/ 联系</a>
+    </nav>
+    <span class="nav-clock" id="clock">00:00:00</span>
+  </header>
+
+  <!-- 首屏 -->
+  <section class="hero" id="top">
+    <p class="hero-kicker reveal">PORTFOLIO · 2026 · SOMEWHERE BETWEEN SLEEP AND SCREEN</p>
+
+    <h1 class="hero-title">
+      <span class="title-line reveal">梦 游 者</span>
+      <span class="title-en reveal">dreamwalker</span>
+    </h1>
+
+    <p class="hero-sub reveal">
+      我收集那些半梦半醒之间的画面 ——<br />
+      粉色房间、无声的走廊、屏幕熄灭前的最后一点光。
+    </p>
+
+    <div class="hero-tags reveal">
+      <span>视觉设计</span><span>交互体验</span><span>创意前端</span><span>梦境叙事</span>
+    </div>
+
+    <a href="#works" class="hero-scroll reveal">
+      <span>向下潜入</span>
+      <span class="scroll-line"></span>
+    </a>
+
+    <div class="hero-status reveal">
+      <span class="dot"></span> 正在做梦 &nbsp;·&nbsp; 信号稳定 &nbsp;·&nbsp; 03:14 AM
+    </div>
+  </section>
+
+  <!-- 碎片跑马灯 -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>are you dreaming?</span><i>✧</i><span>你还醒着吗</span><i>✧</i><span>pink room</span><i>✧</i>
+      <span>无人的走廊</span><i>✧</i><span>static noise</span><i>✧</i><span>请不要醒来</span><i>✧</i>
+      <span>are you dreaming?</span><i>✧</i><span>你还醒着吗</span><i>✧</i><span>pink room</span><i>✧</i>
+      <span>无人的走廊</span><i>✧</i><span>static noise</span><i>✧</i><span>请不要醒来</span><i>✧</i>
+    </div>
+  </div>
+
+  <!-- 关于 -->
+  <section class="section" id="about">
+    <p class="section-label reveal">01 / 关于我</p>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="reveal">
+          白天做设计，<br />
+          夜里<span class="hl">整理梦</span>。
+        </h2>
+        <p class="reveal">
+          我是 Alex，一名视觉设计师与创意开发者。喜欢低饱和的粉、被压缩过的黑、
+          以及一切带着轻微噪点的画面。作品多围绕记忆、空间与数字幻觉展开。
+        </p>
+        <p class="reveal">
+          如果你也曾在凌晨三点盯着一块发光的屏幕，我们大概能聊得来。
+        </p>
+        <div class="stats reveal">
+          <div><strong>7</strong><span>years awake</span></div>
+          <div><strong>48</strong><span>dreams built</span></div>
+          <div><strong>03:14</strong><span>usual hour</span></div>
+        </div>
+      </div>
+
+      <div class="terminal reveal">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <em>dream_log.txt</em>
+        </div>
+        <div class="terminal-body">
+          <p><b>&gt;</b> loading memories...</p>
+          <p><b>&gt;</b> 房间是粉色的，墙纸在呼吸。</p>
+          <p><b>&gt;</b> 走廊尽头有一扇门，门后是同一扇门。</p>
+          <p><b>&gt;</b> 电视机没有信号，但有人在说话。</p>
+          <p><b>&gt;</b> ...</p>
+          <p class="terminal-cursor"><b>&gt;</b> <span class="caret"></span></p>
+        </div>
+        <div class="terminal-foot">SIGNAL: ▓▓▓░░ 68% &nbsp;|&nbsp; NO EXIT FOUND</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品 -->
+  <section class="section" id="works">
+    <p class="section-label reveal">02 / 梦境档案</p>
+
+    <div class="gallery">
+      <a href="#" class="shot shot-left reveal">
+        <figure class="shot-frame visual-1 ratio-4-3">
+          <img src="images/work-1.jpg" alt="粉色房间" loading="lazy" onerror="this.remove()" />
+          <span class="shot-glyph">◐</span>
+          <span class="shot-no">01</span>
+        </figure>
+        <figcaption class="shot-info">
+          <h3>粉色房间 <em>Pink Room</em></h3>
+          <p>空间视觉 / 2025</p>
+          <span class="shot-enter">查看 →</span>
+        </figcaption>
+      </a>
+
+      <a href="#" class="shot shot-right reveal">
+        <figure class="shot-frame visual-2 ratio-3-4">
+          <img src="images/work-2.jpg" alt="无重力" loading="lazy" onerror="this.remove()" />
+          <span class="shot-glyph">▚</span>
+          <span class="shot-no">02</span>
+        </figure>
+        <figcaption class="shot-info">
+          <h3>无重力 <em>Un-Gravity</em></h3>
+          <p>品牌系统 / 2025</p>
+          <span class="shot-enter">查看 →</span>
+        </figcaption>
+      </a>
+
+      <a href="#" class="shot shot-left reveal">
+        <figure class="shot-frame visual-3 ratio-16-10">
+          <img src="images/work-3.jpg" alt="夜间巴士" loading="lazy" onerror="this.remove()" />
+          <span class="shot-glyph">✧</span>
+          <span class="shot-no">03</span>
+        </figure>
+        <figcaption class="shot-info">
+          <h3>夜间巴士 <em>Night Bus</em></h3>
+          <p>网站设计 / 2024</p>
+          <span class="shot-enter">查看 →</span>
+        </figcaption>
+      </a>
+
+      <a href="#" class="shot shot-right reveal">
+        <figure class="shot-frame visual-4 ratio-1-1">
+          <img src="images/work-4.jpg" alt="静态噪点" loading="lazy" onerror="this.remove()" />
+          <span class="shot-glyph">◍</span>
+          <span class="shot-no">04</span>
+        </figure>
+        <figcaption class="shot-info">
+          <h3>静态噪点 <em>Static Noise</em></h3>
+          <p>交互实验 / 2024</p>
+          <span class="shot-enter">查看 →</span>
+        </figcaption>
+      </a>
+    </div>
+  </section>
+
+  <!-- 手记 -->
+  <section class="section" id="notes">
+    <p class="section-label reveal">03 / 梦境手记</p>
+    <div class="notes">
+      <a href="#" class="note reveal">
+        <span class="note-date">2026.11.14</span>
+        <span class="note-title">关于粉色：它不是甜，是一种褪色的记忆</span>
+        <span class="note-tag">思考</span>
+      </a>
+      <a href="#" class="note reveal">
+        <span class="note-date">2026.10.02</span>
+        <span class="note-title">为什么我总在界面里留一块空白</span>
+        <span class="note-tag">设计</span>
+      </a>
+      <a href="#" class="note reveal">
+        <span class="note-date">2026.08.27</span>
+        <span class="note-title">颗粒感：数字世界里最后的呼吸</span>
+        <span class="note-tag">实验</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="contact" id="contact">
+    <p class="section-label reveal">04 / 找到我</p>
+    <h2 class="contact-title reveal">你醒着吗？</h2>
+    <p class="contact-sub reveal">有项目、想法，或只是一个奇怪的梦，都可以写信给我。</p>
+    <a href="mailto:hello@dreamwalker.studio" class="contact-mail reveal">hello@dreamwalker.studio</a>
+    <div class="socials reveal">
+      <a href="#">Behance</a><i>✧</i>
+      <a href="#">Dribbble</a><i>✧</i>
+      <a href="#">GitHub</a><i>✧</i>
+      <a href="#">小红书</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 DREAMWALKER</span>
+    <span class="footer-center">☾ 不要醒来</span>
+    <a href="#top">回到表层 ↑</a>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
